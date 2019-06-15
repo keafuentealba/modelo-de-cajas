@@ -3,144 +3,168 @@
   <head>
     <meta charset="utf-8">
     <title>banderas</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
   <body>
     <style media="screen">
-    .country__container {
-      position: relative;
-      padding: 1% 10%;
-    }
-    .country__container .box-flag {
-      background-color: #ffffff;
-      width: 400px;
-      height: 250px;
-      box-sizing: border-box;
-      float: left;
-      margin: 1px;
-      border-color: grey;
-    }
+      .main {
+        background-color: #ffffff;
+        position: relative;
+        padding:2%  5%;
+       
+      }
 
-    .españa .box-red {
-      width: inherit;
-      height: 26%;
-      background-color: red;
+      .main-content {
+        display: inline-block;
+        margin: auto;
+        width: 400px;
+        height: 250px;
+        margin: 3%;
+        border: 2px solid;
+      }
 
-    }
-    .españa .box-yellow {
-      width: inherit;
-      height: 45%;
-      background-color: yellow;
+      .flag-espain {
+        background-color: red;
 
-    }
+      }
 
-    .dinamarca .box-1, .box-3 {
-      background-color: #ff0000;
-      width: 24%;
-      height: 43%;
-      margin-bottom: 6%;
-      display: inline-block;
+      .flag-espain .yellow {
+        position: absolute;
+        top: 21%;
+        background-color: yellow;
+        width: inherit;
+        height: 13%;
+       }
 
+       .flag-dinamarca .red-supi {
+         background-color: red;
+         height: 45%;
+         width: 60%;
 
-    }
-
-    .dinamarca .box-2, .box-4 {
-      box-sizing: border-box;
-      background-color: #ff0000;
-      width: 70%;
-      height: 43%;
-      float: right;
-    }
-
-    .emiratos-arabes .box-a {
-      background-color: #ff0000;
-      width: 25%;
-      height: inherit;
-      float: left;
-
-    }
-
-    .emiratos-arabes .box-b, .box-c. .box-d {
-      width: 75%;
-
-    }
-
-    .emiratos-arabes .box-b {
-      background-color: green;
-      height: 34%;
-    }
-    .emiratos-arabes .box-c {
-      background-color: #ffffff;
-      height: 32%;
-
-    }
-
-    .emiratos-arabes .box-d {
-      background-color: black;
-      height: 34%;
-    }
-
-    .japon {
-      background-color: #ffffff;
+       }
+        .flag-dinamarca {
+          position: relative;
 
 
+        }
+       .flag-dinamarca .red-supi {
+         position: absolute;
+         background-color: red;
+         height: 45%;
+         width: 30%;
+       }
 
-    }
-    .japon .circle-red {
-      background-color: #ff0000;
-      margin: auto;
-      width: 20%;
-      height: 30%;
-      border-radius: 50%;
-      margin-top: 25%;
-    }
+       .flag-dinamarca .red-supd {
+         position: absolute;
+         right: 0%;
+         background-color: red;
+         width: 65%;
+          height: 45%;
+          box-sizing: border-box;
+        
+       }
+
+        .flag-dinamarca .red-infi {
+          position: absolute;
+          bottom: 0%;
+          background-color: red;
+          height: 45%;
+          width: 30%;
+
+        }
+        .flag-dinamarca .red-infd {
+          position: absolute;
+          right: 0%;
+          bottom: 0%;
+          background-color: red;
+          width: 65%;
+          height: 45%;
+          box-sizing: border-box;
+
+        }
+
+        .flag-emiratos {
+          background-color: red;
+          position: relative;
+
+        }
+
+        .flag-emiratos .green-sup {
+          background-color: green;
+          position: absolute;
+          right: 0%;
+          width: 72%;
+          height: 35%;
+
+        }
+
+        .flag-emiratos .white-med {
+          background-color: white;
+          position: absolute;
+          right: 0%;
+          top: 35%;
+          width: 72%;
+          height: 35%;
+
+        }
+        .flag-emiratos .dark-inf {
+          background-color: black;
+          position: absolute;
+          right: 0%;
+          bottom: 0%;
+          width: 72%;
+          height: 35%;
+
+        }
+
+        .main-content .flag-japon {
+          position: relative;
+        }
+
+        .flag-japon .red-circle {
+          position: absolute;
+          top: 65%;
+          right: 38%;
+          background-color: red;
+          width: 8%;
+          height: 15%;
+          border-radius: 50%;
+          margin: auto;
+          
+
+        }
+
+
 
     </style>
-    <section class="country__container">
-      <div class="box-flag españa">
-        <div class="box-red a">
-        </div>
-        <div class="box-yellow">
-        </div>
-        <div class="box-red b">
-        </div>
+    
+   <main class="main">
+    <div>
+      <div class="main-content flag-espain">
+        <div class="yellow"></div>
+       
       </div>
 
-      <div class="box-flag dinamarca">
-
-        <div class="box-1">
-        </div>
-
-        <div class="box-2">
-        </div>
-
-        <div class="box-3">
-        </div>
-        <div class="box-4">
-
-        </div>
+      <div class="main-content flag-dinamarca">
+        <div class="red-supi"></div>
+        <div class="red-supd"></div>
+        <div class="red-infi"></div>
+        <div class="red-infd"></div>
       </div>
 
-      <div class="box-flag  emiratos-arabes">
-        <div class="box-a">
-        </div>
-        <div class="box-b">
-        </div>
-        <div class="box-c">
-        </div>
-        <div class="box-d">
-        </div>
-      </div>
-      <div class="box-flag japon">
-        <div class="circle-red">
-
-        </div>
-
+      <div class="main-content flag-emiratos">
+        <div class="green-sup"></div>
+        <div class="white-med"></div>
+        <div class="dark-inf"></div>
       </div>
 
+      <div class="main-content flag-japon">
+         <div class="red-circle"></div>
+      </div></div>
+       
+       
+   </main>
 
-    </section>
   </body>
 </html>
